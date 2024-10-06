@@ -7,7 +7,7 @@ info:
   description: XOOPS Installation Wizard panel was detected.
   tags: panel,xoops
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/install/page_start.php"

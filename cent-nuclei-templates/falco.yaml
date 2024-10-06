@@ -1,0 +1,20 @@
+Fixed rule condition:
+- /falcosecurity/falco/commit/ae5342c54b2a5698a8ee66d3e53327bbbac07db4
+Update rules/falco_rules.yaml:
+- /falcosecurity/falco/commit/b9925577ef1e43ad770fa593a91bd3e98c033310
+'spelling:':
+- /falcosecurity/falco/commit/53c77ea6b5f6370de5cf5048df5bf827ef72577a
+'spelling: allowed':
+- /falcosecurity/falco/commit/a84adbd2313284f0cfb9168c1f7bb244a660f5d6
+'spelling: altogether':
+- /falcosecurity/falco/commit/eabd3ad24b5cdf2dbe8b6a2cb874be3bce88a0ba
+'spelling: command lines':
+- /falcosecurity/falco/commit/fa7fab525fef334a2746652c487b1aecd763ebb3
+'spelling: hierarchy':
+- /falcosecurity/falco/commit/1306fd6ac1e1e39a1ee7d4e71499766725ed2189
+'spelling: privileged':
+- /falcosecurity/falco/commit/9a314d9443ca4c7945705473992d1febc3f7d5d4
+'spelling: themselves':
+- /falcosecurity/falco/commit/e8aac3189097b4b16216833e1cef3635eac7eb69
+upgrade macro(keepalived_writing_conf):
+- /falcosecurity/falco/commit/87c410e49e3b356d6220d31d2708444bdfb176f8

@@ -1,0 +1,20 @@
+Add 4 cnvd templates:
+- /projectdiscovery/nuclei-templates/pull/3853
+Adding randstr path:
+- /projectdiscovery/nuclei-templates/pull/3743
+Create cache-poisoning-xss.yaml:
+- /projectdiscovery/nuclei-templates/pull/3811
+Create express-routes-disclosure.yaml:
+- /projectdiscovery/nuclei-templates/pull/3793
+Dashboard Text Enhancements:
+- /projectdiscovery/nuclei-templates/pull/3852
+Update CVE-2019-12725.yaml:
+- /projectdiscovery/nuclei-templates/pull/3842
+Update kibana-panel.yaml:
+- /projectdiscovery/nuclei-templates/pull/3841
+'[false-positive] WordPress Contact Form 7 Plugin - Unrestricted File Upload':
+- /projectdiscovery/nuclei-templates/pull/3825
+add CVE-2021-41282:
+- /projectdiscovery/nuclei-templates/pull/3844
+add CVE-2022-0824:
+- /projectdiscovery/nuclei-templates/pull/3845

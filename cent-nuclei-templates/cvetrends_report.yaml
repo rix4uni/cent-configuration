@@ -1,0 +1,73 @@
+CVE-2016-5195:
+- ''
+- Race condition in mm/gup.c in the Linux kernel 2.x through 4.x before 4.8.3 allows
+  local users to gain privileges by leveraging incorrect handling of a copy-on-write
+  (COW) feature to write to a read-only memory mapping, as exploited in the wild in
+  October 2016, aka "Dirty COW."
+- - products:
+    - product: Ubuntu Linux
+      versions:
+      - '16.04'
+    vendor: Canonical
+  - products:
+    - product: Linux Kernel
+      versions:
+      - '*'
+    vendor: Linux
+  - products:
+    - product: Enterprise Linux Aus
+      versions:
+      - '6.5'
+    vendor: Redhat
+  - products:
+    - product: Debian Linux
+      versions:
+      - '7.0'
+      - '8.0'
+    vendor: Debian
+- 7.8
+CVE-2021-4034:
+- ''
+- A local privilege escalation vulnerability was found on polkit's pkexec utility.
+  The pkexec application is a setuid tool designed to allow unprivileged users to
+  run commands as privileged users according predefined policies. The current version
+  of pkexec doesn't handle the calling parameters count correctly and ends trying
+  to execute environment variables as commands. An attacker can leverage this by crafting
+  environment variables in such a way it'll induce pkexec to execute arbitrary code.
+  When successfully executed the attack can cause a local privilege escalation given
+  unprivileged users administrative rights on the target machine.
+- - products:
+    - product: Polkit
+      versions:
+      - '*'
+    vendor: Polkit Project
+  - products:
+    - product: Enterprise Linux Workstation
+      versions:
+      - '7.0'
+    vendor: Redhat
+  - products:
+    - product: Ubuntu Linux
+      versions:
+      - '14.04'
+      - '16.04'
+      - '18.04'
+      - '20.04'
+      - '21.10'
+    vendor: Canonical
+- 7.8
+CVE-2022-0847:
+- ''
+- Pending
+- []
+- Pending
+CVE-2022-26485:
+- ''
+- Pending
+- []
+- Pending
+CVE-2022-26486:
+- ''
+- Pending
+- []
+- Pending
