@@ -12,7 +12,7 @@ exclude-files:
 
 # Add github urls
 community-templates:
-  - https://github.com/rix4uni/cent-configuration
+  - https://github.com/rix4uni/collected-templates-other-sources
   - https://github.com/0x727/ObserverWard
   - https://github.com/0xAwali/Blind-SSRF
   - https://github.com/0xAwali/Virtual-Host
@@ -614,3 +614,5 @@ community-templates:
   - https://github.com/iamthefrogy/nerdbug
   - https://github.com/jbertman/generate-nuclei-templates
   - https://github.com/applefellow/nuclei_templates_payload_maker
+  - https://github.com/lianqingsec/NucleiPocGather
+  - https://github.com/cyb3r-w0lf/nuclei-template-collection

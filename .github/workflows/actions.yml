@@ -3,9 +3,9 @@ name: Nuclei-Templates-Collecter
 on:
   schedule:
     - cron: '0 */12 * * *'
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 
 # Actions project permission
 permissions:
@@ -27,21 +27,20 @@ jobs:
     - name: Installing unzip and cent via binary
       run: |
         sudo apt install unzip
-        wget https://github.com/xm1k3/cent/releases/download/v1.3.4/cent_1.3.4_linux_amd64.zip && unzip cent_1.3.4_linux_amd64.zip -d cent_1.3.4_linux_amd64 && mv cent_1.3.4_linux_amd64/cent cent && rm -rf cent_1.3.4_linux_amd64.zip cent_1.3.4_linux_amd64
-
-    - name: Add cent to .gitignore
-      run: |
-        echo 'cent' >> .gitignore
+        wget https://github.com/xm1k3/cent/releases/download/v1.3.4/cent_1.3.4_linux_amd64.zip
+        unzip cent_1.3.4_linux_amd64.zip -d cent_1.3.4_linux_amd64
+        mv cent_1.3.4_linux_amd64/cent /usr/local/bin/cent
+        rm -rf cent_1.3.4_linux_amd64.zip cent_1.3.4_linux_amd64
 
     - name: Running cent
       run: |
-        ./cent --config .cent.yaml -p cent-nuclei-templates
+        cent --config .cent.yaml -p cent-nuclei-templates
 
     - name: Commit and push changes if there are any
       run: |
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@users.noreply.github.com'
-        git add README.md
+        git add .
         
         # Check if there are changes before committing
         if ! git diff --cached --exit-code; then
