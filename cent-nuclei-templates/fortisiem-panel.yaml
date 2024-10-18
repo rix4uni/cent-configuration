@@ -5,11 +5,15 @@ info:
   author: pussycat0x
   severity: info
   description: FortiSIEM login panel was detected.
+  classification:
+    cpe: cpe:2.3:a:fortinet:fortisiem:*:*:*:*:*:*:*:*
   metadata:
-    shodan-query: http.favicon.hash:-1341442175
     verified: true
+    max-request: 2
+    shodan-query: "http.favicon.hash:-1341442175"
+    product: fortisiem
+    vendor: fortinet
   tags: panel,fortisiem
-
 flow: http(1) && http(2)
 http:
   - method: GET
@@ -32,4 +36,4 @@ http:
       - type: word
         words:
           - "fortiSIEM_current_login_salt"
-# digest: 4b0a004830460221008a6a772c3fffde8fd5b541e366e20e6b81a4011deaf15fa077582db848d2c813022100fb2379020323dd1ef0c99d77e5087cc52deb84d65e814c6701363586ed883756:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450220067de9f0b44e9b79b8254288a61be9a34611bd871facffb224f070b63299061d02210080992db0adec73cf4422349bba4f3d574f6aa5f873050937c5ba731f4797b308:922c64590222798bb761d5b6d8e72950

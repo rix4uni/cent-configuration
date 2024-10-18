@@ -4,9 +4,13 @@ info:
   name: FortiClient Endpoint Management Server Panel - Detect
   author: h4sh5
   severity: info
+  classification:
+    cpe: cpe:2.3:a:fortinet:forticlient_endpoint_management_server:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
+    vendor: fortinet
+    product: forticlient_endpoint_management_server
     shodan-query: http.favicon.hash:-800551065
   tags: panel,fortinet,forticlient,ems,login,detect
 
@@ -33,4 +37,4 @@ http:
         group: 1
         regex:
           - 'VERSION_FULL\\u0022: \\u0022(.*?)\\u0022'
-# digest: 4a0a00473045022100ca8f62bf9c299d2ef4a24562fab0cfa6df4bf3e529e144287b08a9bddd70bfff0220395f7b7c4d94585210c9476eb9589430b114ef7e13f20e84109aef636d456745:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100acaf2db6ab9b068f2b7ca171457924aa752dd85bf5c4b7c4b9c5cf122c70e2f8022100cb1566061907ac1b8d9ac8a103271b17cbebdbe6e02adbb31885fb917fd81627:922c64590222798bb761d5b6d8e72950

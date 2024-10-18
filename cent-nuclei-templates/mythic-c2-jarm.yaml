@@ -12,7 +12,7 @@ info:
     - https://www.socinvestigation.com/shodan-filters-to-hunt-adversaries-infrastructure-and-c2/
   metadata:
     max-request: 1
-  tags: c2,ir,osint,mythic,jarm
+  tags: jarm,network,c2,ir,osint,cti,mythic,tcp
 tcp:
   - inputs:
       - data: 2E
@@ -23,5 +23,4 @@ tcp:
       - type: dsl
         dsl:
           - "jarm(Hostname) == '2ad2ad0002ad2ad00042d42d000000ad9bf51cc3f5a1e29eecb81d0c7b06eb'"
-
-# digest: 4a0a004730450221008166d2cc365c201433f0e370006e901e2325e8cfec8eed35de402f55e8e59c3e02207f742b46f8752957aa76e50d306d8fcbfc57e72a91c87443920fae364bc33caa:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502201bf140895a53a4b654756081d1805831e090fdf24d10a3742242dce6b23ddca6022100e0b511fa0132e68932e6fcbbf19de2cd93143b298cbeaea0897ad902f6d5c61a:922c64590222798bb761d5b6d8e72950

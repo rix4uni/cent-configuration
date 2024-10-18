@@ -6,11 +6,15 @@ info:
   severity: high
   reference:
     - https://documentation.softwareag.com/
+  classification:
+    cpe: cpe:2.3:a:softwareag:webmethods:*:*:*:*:*:*:*:*
   metadata:
     verified: true
-    shodan-query: http.favicon.hash:-234335289
+    max-request: 5
+    shodan-query: "http.favicon.hash:-234335289"
+    product: webmethods
+    vendor: softwareag
   tags: default-login,webmethod
-
 flow: http(1) && http(2)
 
 http:
@@ -63,4 +67,4 @@ http:
           - Invalid credentials
         negative: true
         condition: and
-# digest: 4a0a00473045022100c2ff9832495b567326f60a3290cab01226778deef5fb3b3cc77288024507dce7022035ca48f6387403fbaccecdec948c4473ce0e90f135fc8b17cc5c3c28c8d54d70:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100baba049ba5eadf6d4e0f64de33c128f729b1bce7eb414e4d4247431af52d0079022100a9bb3f5549be4169d5035d840420d2b2fa49fe729cf1e770e4999c4e7580725f:922c64590222798bb761d5b6d8e72950

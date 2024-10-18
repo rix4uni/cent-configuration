@@ -9,10 +9,14 @@ info:
   reference:
     - https://www.nocodb.com/
     - https://docs.nocodb.com/
+  classification:
+    cpe: cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*
   metadata:
     verified: true
-    max-request: 1
-    shodan-query: http.favicon.hash:206985584
+    max-request: 2
+    vendor: xgenecloud
+    product: nocodb
+    shodan-query: "http.favicon.hash:206985584"
   tags: panel,nocodb,login,detect
 
 http:
@@ -22,6 +26,7 @@ http:
       - "{{BaseURL}}/dashboard/favicon.ico"
 
     stop-at-first-match: true
+
     matchers-condition: or
     matchers:
       - type: word
@@ -33,4 +38,4 @@ http:
       - type: dsl
         dsl:
           - "status_code==200 && (\"206985584\" == mmh3(base64_py(body)))"
-# digest: 4a0a004730450220714636130a5e204032c15b6e2559e50c5dc598f220ac85fdf5d0d0d98feec3ee022100836baf611ae336e0d9d107a9c9d3acd8c159804a0632983e87209fb0819e2790:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022007188fd20e7ef0aecbc808341e5176830ab98b9792818740d3500217eb91fcad02201d1fc38a84521b5cb12fba1d4a87a94d92f18575ce59d070f5324b1862d988bb:922c64590222798bb761d5b6d8e72950

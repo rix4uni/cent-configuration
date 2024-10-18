@@ -11,7 +11,7 @@ info:
     - https://github.com/byt3bl33d3r/SILENTTRINITY
   metadata:
     max-request: 1
-  tags: silenttrinity,c2,osint,ir,jarm
+  tags: jarm,network,c2,ir,osint,cti,silenttrinity,tcp
 tcp:
   - inputs:
       - data: 2E
@@ -22,5 +22,4 @@ tcp:
       - type: dsl
         dsl:
           - "jarm(Hostname) == '2ad2ad0002ad2ad00042d42d000000ad9bf51cc3f5a1e29eecb81d0c7b06eb'"
-
-# digest: 4a0a00473045022100aed55a5b95dfe75da063c2e9eeae643b4c29ca3b10c95e7f9bb193a635aa877702204578bdd7e0a21ff218ed818bc47ba6729144ebb272939f6b3b2a18cb0752fd6d:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022028c3ea33a7976ee90edab1b4ebd798692518b3c3ed597864bbd6c51ab2d263ab022100fbe7b5c7e97f69b0f18d54df0b4efc5f947af1c7f58364fd42545b65bc111b70:922c64590222798bb761d5b6d8e72950

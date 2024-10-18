@@ -10,14 +10,17 @@ info:
     - https://www.exploit-db.com/ghdb/8023
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
     cwe-id: CWE-200
+    cpe: cpe:2.3:h:reliablecontrols:mach-prowebcom:*:*:*:*:*:*:*:*
   metadata:
     verified: true
+    max-request: 1
     google-query: intitle:"Log on to MACH-ProWeb"
+    product: mach-prowebcom
+    vendor: reliablecontrols
   tags: panel,machproweb,edb
 
-requests:
+http:
   - method: GET
     path:
       - '{{BaseURL}}/login.html'
@@ -32,5 +35,4 @@ requests:
       - type: status
         status:
           - 200
-
-# Enhanced by md on 2022/11/29
+# digest: 490a004630440220519c9b6955d4ca66a07a682136820a2c19851d24883a49cac0737246649b7b4a022038c3c410caffa574f2f44fb7b8b4fb82a935ff6f00b723847fa8460b2c1b33f6:922c64590222798bb761d5b6d8e72950
