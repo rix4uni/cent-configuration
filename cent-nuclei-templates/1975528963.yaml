@@ -1,12 +1,12 @@
 id: pop3
 info:
-  name: DBOX TCL pop3d
+  name: Gattaca pop3d
   author: nmap,cn-kali-team
   tags: detect,tech,pop3,service
   severity: info
   metadata:
+    hostname: $1
     rarity: 0
-    version: $1
 tcp:
 - name: 'null'
   inputs:
@@ -17,4 +17,4 @@ tcp:
   - name: pop3
     type: regex
     regex:
-    - ^\+OK DBOX POP3 Server ([\d.]+) ready\r\n
+    - ^\+OK ([\w.-]+) Service ready <\d+\.\d+@[\w.-]+>\r\n

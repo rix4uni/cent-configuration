@@ -1,13 +1,12 @@
 id: sip
 info:
-  name: Hypermedia HG-4000 VoIP GSM gateway SIP
+  name: Siemens Gigaset DX800A VoIP phone SIP
   author: nmap,cn-kali-team
   tags: detect,tech,sip,service
   severity: info
   metadata:
-    device_type: VoIP adapter
+    device_type: VoIP phone
     rarity: 5
-    version: $1
 tcp:
 - name: sipoptions
   inputs:
@@ -19,4 +18,4 @@ tcp:
   - name: sip
     type: regex
     regex:
-    - '(?i)^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?User-Agent: HG4000/([\w._-]+)+\r\n'
+    - '(?i)^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Allow: INVITE, ACK, CANCEL, BYE, OPTIONS, INFO, REFER, SUBSCRIBE, NOTIFY\r\nAccept: application/sdp,application/dtmf-relay,application/simple-message-summary,message/sipfrag\r\nAccept-Encoding: identity\r\n'
